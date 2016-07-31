@@ -15,8 +15,10 @@ def main():
     periods = eval(input("Please enter the number of compounding periods in a year: "))
     years = eval(input("Please enter the number of years to calculate: "))
     print()
+
     # To compute the value in 10 years for example, the program should loop 10 *
     # periods times and accrue rate /period interest on each iteration.
+
     loopcount = years * periods
     for i in range(loopcount):
         principal = principal * (1 + rate / periods)
