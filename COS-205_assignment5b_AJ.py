@@ -5,10 +5,10 @@
 
 
 def fibo(n):
-    seqa,seqb = 1,1
+    fiba,fibb = 1,1
     for i in range(n-1):
-        seqa,seqb = seqb,seqa+seqb
-    return seqa
+        fiba,fibb = fibb,fiba+fibb
+    return fiba
 
 
 # Then write a main program that prompts the user to enter n and prints out
@@ -16,8 +16,9 @@ def fibo(n):
 
 
 def main():
-    prompt = eval(input("Please enter the desired nth Fibonacci number: "))
-    number = fibo(prompt)
-    print("The Fibonacci number in position", prompt, "is:", number)
+
+    n = eval(input("Please enter the desired nth Fibonacci number: "))
+    number = fibo(n)
+    print("The Fibonacci number in position", n, "is:", number)
 
 main()
