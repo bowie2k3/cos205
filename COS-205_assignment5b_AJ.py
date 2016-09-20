@@ -1,9 +1,8 @@
-
 # Write a function to compute the nth Fibonacci number. A Fibonacci sequence
 # is a sequence of numbers where each successive number is the sum of the
 # previous two. The classic Fibonacci sequence begins as 1, 1, 2, 3, 5, 8, 13, ...
 
-import time
+
 def fibo(n):
     fiba,fibb = 1,1
     for i in range(n-1):
@@ -16,10 +15,9 @@ def fibo(n):
 
 
 def main():
-    start_time = time.time()
+
     n = eval(input("Please enter the desired nth Fibonacci number: "))
     number = fibo(n)
     print("The Fibonacci number in position", n, "is:", number)
-    print("--- %s seconds ---" % (time.time() - start_time))
 
 main()
