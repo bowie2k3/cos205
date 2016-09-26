@@ -1,4 +1,5 @@
 # COS-205_assignment7_AJ.py
+# v1.2 - Added is_whole function and error handling.
 
 
 def gcd(n, m):
